@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # quizz_app
 
 A new Flutter project.
@@ -18,4 +18,4 @@ samples, guidance on mobile development, and a full API reference.
 =======
 # QuizzApp
 A flutter app explaining the basic MaterialApp widget to understand navigation,landing_pages and routes to be included in a mobile application.
->>>>>>> 2f5d1a351931ba2aaa2fc1e76346dfef571935ce
+
