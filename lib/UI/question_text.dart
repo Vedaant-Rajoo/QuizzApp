@@ -16,12 +16,10 @@ class QuestionTextState extends State<QuestionText>
   @override
   void initState() {
     super.initState();
-    _fontAnimationController = new AnimationController(
-        duration: new Duration(milliseconds: 500), vsync: this);
-    _fontSizeAnimation = new CurvedAnimation(
-        parent: _fontAnimationController, curve: Curves.linear);
-        _fontSizeAnimation.addListener(()=> this.setState(() {}));
-        _fontAnimationController.forward();
+    _fontAnimationController = new AnimationController(duration: const Duration(milliseconds: 2000), vsync: this);
+    _fontSizeAnimation = new CurvedAnimation(parent: _fontAnimationController, curve: Curves.bounceOut);
+    _fontSizeAnimation.addListener(()=> this.setState(() {}));
+    _fontAnimationController.forward();
   }
 
   @override
@@ -32,10 +30,8 @@ class QuestionTextState extends State<QuestionText>
           padding: const EdgeInsets.symmetric(vertical: 20.0),
           child: new Center(
               child: new Text("Statement " +
-                  widget._questionNumber.toString() +
-                  ": " +
-                  widget._question,
-                  style: new TextStyle(fontSize: _fontSizeAnimation.value*15),
+                  widget._questionNumber.toString() +": " + widget._question,
+                  style: new TextStyle(fontSize: _fontSizeAnimation.value * 15),
                   ),
                   )
         ),
