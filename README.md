@@ -1,8 +1,8 @@
-
-# quizz_app
-----------
+---
 permalink: /index.html
-----------
+---
+# quizz_app
+
 A new Flutter project.
 
 ## Getting Started
