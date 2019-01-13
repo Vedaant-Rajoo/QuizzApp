@@ -1,6 +1,8 @@
 
 # quizz_app
-
+----------
+permalink: /index.html
+----------
 A new Flutter project.
 
 ## Getting Started
